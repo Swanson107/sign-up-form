@@ -16,12 +16,17 @@ body {
 }
 
 img {
-    max-height: 1150px;
+    max-width: 38rem;
+    max-height: auto;
     background-size : cover;
 }
 
 #photo-credit {
-    background-color:Black;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 8%;
+    position:absolute;
+    margin-top: 48rem;
+    margin-left: 12rem;
 }
 
 .sidebar {
@@ -32,10 +37,63 @@ img {
 }
 
 .content {
-    width: 50%;
-    margin-left : 10%;
+    width: 55%;
+    margin-left : 8%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.header {
+    width: 70%;
+    font-size : 1.25rem;
 }
 
 .form {
-    width: 66%;
+    width: 80%;
+    margin-bottom: 2rem;
+
+    gap: 1.5rem;
+}
+
+.form-block {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+input {
+    border: none;
+    background-color: rgb(228, 224, 224);
+    height: 1.5rem;
+    width: 12rem;   
+    margin-top: 1rem;
+    margin-left: -0.6rem;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    font-size : 16px;
+    gap: 10%;
+    max-width: 33%;
+    padding: 0.33rem;
+    background-color : blue;
+}
+
+#submit-button {
+    height: 40%;
+    font-size: 16px;
+    border: none;
+    border-radius: 15%;
+    background-color : blue;
+}
+
+#submit-button:hover {
+    background-color: green;
 }
