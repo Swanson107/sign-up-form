@@ -1,9 +1,41 @@
 html,
 body {
-    font-size: 18px;
+    font-size: 20px;
+    background-color : darkslategray;
+    overflow: hidden;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color : darkslategray;
+    color: white;
+}
+
+img {
+    max-height: 1150px;
+    background-size : cover;
+}
+
+#photo-credit {
+    background-color:Black;
 }
 
 .sidebar {
-    background-image: url("images/tom-podmore-faZiexCJcY0-unsplash.jpg");
     color : white;
+    background-color: green;
+    max-width: 33%;
+    margin-left: -0.5rem;
+}
+
+.content {
+    width: 50%;
+    margin-left : 10%;
+}
+
+.form {
+    width: 66%;
 }

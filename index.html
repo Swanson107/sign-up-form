@@ -11,12 +11,13 @@
 <body>
     <div class="main-container">
 
+        <img src="images/tom-podmore-faZiexCJcY0-unsplash.jpg">
+        <!--
         <div class="sidebar">
-            <p>Photo by Tom Podmore on Unsplash</p>
-        </div>
 
+       <p id="photo-credit">Photo by Tom Podmore on Unsplash</p>
+        </div> -->
         <div class="content">
-
             <div class="header">
                 <h4>This is not a real service! Our company provides outstanding service
                     alongside exceptional products. Sign up for our service and you can take one step closer to realizing
@@ -24,7 +25,39 @@
                 <h4>Take that first step with us today</h4>
             </div>
             <div class="form">
+                <div class="form-block">
+                    <fieldset>
+                        <legend>Let's get Started</legend>
 
+                        <label for="first_name"></label>
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name">
+
+                        <label for="last_name"></label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+                    </fieldset>
+                </div>
+                <div class="form-block">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555)-555-5555">
+                    </fieldset>
+                </div>
+                <div class="form-block">
+                    <fieldset>
+                        <legend>Password</legend>
+
+                        <label for="user_password"></label>
+                        <input type="password" id="user_password" name="password" placeholder="5-60 characters">
+
+                        <label for="confirm_password"></label>
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                    </fieldset>
+                </div>
             </div>
             <div class="footer">
 
