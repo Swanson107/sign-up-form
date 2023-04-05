@@ -1,0 +1,9 @@
+html,
+body {
+    font-size: 18px;
+}
+
+.sidebar {
+    background-image: url("images/tom-podmore-faZiexCJcY0-unsplash.jpg");
+    color : white;
+}
