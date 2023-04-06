@@ -10,10 +10,12 @@
 </head>
 <body>
     <div class="main-container">
+        <div id="photo-box">
 
-        <img src="images/tom-podmore-faZiexCJcY0-unsplash.jpg">
+            <img src="images/tom-podmore-faZiexCJcY0-unsplash.jpg">
 
-        <p id="photo-credit">Photo by Tom Podmore on Unsplash</p>
+            <p id="photo-credit">Photo by Tom Podmore on Unsplash</p>
+        </div> 
         <div class="content">
             <div class="header">
                 <h4>This is not a real service! Our company provides outstanding service
@@ -27,10 +29,10 @@
                         <legend>Let's get to know each other</legend>
 
                         <label for="first_name"></label>
-                        <input type="text" id="first_name" name="first_name" placeholder="First Name">
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
 
                         <label for="last_name"></label>
-                        <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
                     </fieldset>
                 </div>
                 <div class="form-block">
@@ -38,10 +40,11 @@
                         <legend>Contact Information</legend>
 
                         <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
                         <label for="phone"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="(555)-555-5555">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number (555-555-5555)" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </fieldset>
                 </div>
                 <div class="form-block">
@@ -49,16 +52,18 @@
                         <legend>Password</legend>
 
                         <label for="user_password"></label>
-                        <input type="password" id="user_password" name="password" placeholder="5-60 characters">
+                        <input type="password" id="user_password" name="password" placeholder="5-60 characters" 
+                                required minlength="5" maxlength="60">
 
                         <label for="confirm_password"></label>
-                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" 
+                                required minlength="5" maxlength="60">
                     </fieldset>
                 </div>
             </div>
             <div class="footer">
                 <button id="submit-button">Create Account</button>
-                <p>Already have an account? <a href="#">Log</a></p>
+                <p>Already have an account? <a href="#">Log In</a></p>
             </div>
         </div>
     </div>

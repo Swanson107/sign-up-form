@@ -2,22 +2,21 @@ html,
 body {
     font-size: 20px;
     background-color : darkslategray;
+    margin: auto;
     overflow: hidden;
-    margin-left: -0.5rem;
-    margin-top: -0.5rem;
 }
 
 .main-container {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: start;;
+    align-items: start;;
     background-color : darkslategray;
     color: white;
 }
 
 img {
-    max-width: 38rem;
-    max-height: auto;
+    max-width: 32rem;
+    max-height: 90rem;
     background-size : cover;
 }
 
@@ -37,11 +36,13 @@ img {
 }
 
 .content {
+    margin-top: 5rem;
     width: 55%;
     margin-left : 8%;
     display:flex;
     flex-direction: column;
     justify-content: start;
+    flex-wrap:wrap;
 }
 
 .header {
@@ -51,8 +52,7 @@ img {
 
 .form {
     width: 80%;
-    margin-bottom: 2rem;
-
+    margin-bottom: 0;
     gap: 1.5rem;
 }
 
@@ -73,7 +73,14 @@ input {
     width: 12rem;   
     margin-top: 1rem;
     margin-left: -0.6rem;
+    border-radius: 8px;
 }
+
+input:valid {
+    background-color : #e2fce2;
+}
+
+
 
 
 .footer {
@@ -83,15 +90,17 @@ input {
     gap: 10%;
     max-width: 33%;
     padding: 0.33rem;
-    background-color : blue;
+}
+
+.footer a{
+    color: white;
 }
 
 #submit-button {
     height: 40%;
     font-size: 16px;
     border: none;
-    border-radius: 15%;
-    background-color : blue;
+    border-radius: 12px;
 }
 
 #submit-button:hover {
